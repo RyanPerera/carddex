@@ -16,6 +16,10 @@ Notes
         any ideas for future improvements
     We are not expecting a huge project, try to aim for something that can be built in ~6-8 hours of work.
 
+# what API you chose and why
+
+Trying: https://docs.pokemontcg.io/
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
