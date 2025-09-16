@@ -20,11 +20,13 @@ Downsides:
 Design goal was to create an app with a slick and dark aesthetic. I love Pokémon cards and wanted to create something that I could potentially expand into something more useful.
 I built it using React-Vite with TypeScript. I used TailwindCSS with the ShadCN Component kit in order to quickly ideate and build what I had in mind.
 At first I had just created a basic tool that allowed you to search for cards and view them in more detail, but I figured I should be able to do something more useful, and took my other project ShouldIRip (https://ryanperera.github.io/shouldirip/) as inspiration. Thus, leading me to add the ability to create a collection and see statistics about it.
+When displaying card details in a Dialog component, I took inspiration from the actual card layout itself.
 
 ## Future Improvements
 
 - Visual Improvements:
 
+  - Add a loading spinner when search results are loading
   - Utilize clip-paths to have more straight edges on shapes, for a more cohesive, sharper look
   - Use a different icon set for the "Types" (Fire, Lightning, Fighting) for better legibility. Tooltips aren't really practical on mobile, so it needs to be understood what icon represents at a glance without using tooltips.
   - Further responsiveness audits. I did some testing for responsiveness throughout development, but there is still room for improvement.
