@@ -20,6 +20,18 @@ Notes
 
 Trying: https://docs.pokemontcg.io/
 
+# any ideas for future improvements
+
+- Visual Improvements:
+
+  - utilize clip-paths to have more straight edges on shapes, for a more cohesive, sharper look
+  - use a different icon set for the "Types" (Fire, Lightning, Fighting) for better legibility. Tooltips aren't really practical on mobile, so it needs to be understood what icon represents at a glance without using tooltips.
+
+- General:
+  - Utilize smaller images with webp format to optimize image loading
+  - Differentiate between different card types
+  - Add pagination and filtering to the search
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
