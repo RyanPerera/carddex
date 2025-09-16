@@ -1,36 +1,41 @@
-# Task
+# Pokémon CardDex
 
-Build a simple dashboard that fetches and displays data from any public API. The API can be anything that interests you. How you design and present the data is up to you - we want to see your best judgement in creating a clear and useful UI.
+Welcome to my Pokémon CardDex! This tool allows users to search for Pokémon cards in order to build a collection. See detailed information about cards, and get statistics about your collection.
 
-Some examples could be a Pokémon explorer dashboard, where you can search and display all types of information about a specific Pokémon. Or even an NBA stats dashboard where you can look up a player or team and visualize their career stats.
+## API Reasoning
 
-Notes
+Chose the following API: https://docs.pokemontcg.io/
+For the following reasons:
 
-    We primarily use React/Typescript, but you are welcomed to use another stack if you prefer
-    No authentication is needed
-    Please keep a clear git commit history, to show us your development process
-    Please deploy this to any public URL (e.g. vercel, netlify, github pages, etc)
-    Please also include a short README explaining:
-        what API you chose and why
-        any design decisions
-        any ideas for future improvements
-    We are not expecting a huge project, try to aim for something that can be built in ~6-8 hours of work.
+- Seemed to be the most extensive API available for the task.
+- I appreciated the type info in the documentation, as it went over each object and their attributes.
+- The query functionality seemed to be very versatile and would be useful for future improvements
 
-# what API you chose and why
+Downsides:
 
-Trying: https://docs.pokemontcg.io/
+- Noticed the server response time was very slow throughout testing. Added debounce to my search functionality to reduce the amount of requests, but it still feels sluggish in action
 
-# any ideas for future improvements
+## Design Decisions
+
+Design goal was to create an app with a slick and dark aesthetic. I love Pokémon cards and wanted to create something that I could potentially expand into something more useful.
+I built it using React-Vite with TypeScript. I used TailwindCSS with the ShadCN Component kit in order to quickly ideate and build what I had in mind.
+At first I had just created a basic tool that allowed you to search for cards and view them in more detail, but I figured I should be able to do something more useful, and took my other project ShouldIRip (https://ryanperera.github.io/shouldirip/) as inspiration. Thus, leading me to add the ability to create a collection and see statistics about it.
+
+## Future Improvements
 
 - Visual Improvements:
 
-  - utilize clip-paths to have more straight edges on shapes, for a more cohesive, sharper look
-  - use a different icon set for the "Types" (Fire, Lightning, Fighting) for better legibility. Tooltips aren't really practical on mobile, so it needs to be understood what icon represents at a glance without using tooltips.
+  - Utilize clip-paths to have more straight edges on shapes, for a more cohesive, sharper look
+  - Use a different icon set for the "Types" (Fire, Lightning, Fighting) for better legibility. Tooltips aren't really practical on mobile, so it needs to be understood what icon represents at a glance without using tooltips.
+  - Further responsiveness audits. I did some testing for responsiveness throughout development, but there is still room for improvement.
+  - Use (Framer) Motion to add some cool animations
 
 - General:
   - Utilize smaller images with webp format to optimize image loading
   - Differentiate between different card types
   - Add pagination and filtering to the search
+  - Consider scraping data into my own database to reduce API response times significantly
+  - Display more useful data in the statistics table. This may require surveying users/players on what information would be useful to them
 
 # React + TypeScript + Vite
 
