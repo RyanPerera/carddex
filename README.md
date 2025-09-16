@@ -2,6 +2,8 @@
 
 Welcome to my Pokémon CardDex! This tool allows users to search for Pokémon cards in order to build a collection. See detailed information about cards, and get statistics about your collection.
 
+Please note that the server response times using this API are rather slow, so you may see nothing but a search bar for a short period.
+
 ## API Reasoning
 
 Chose the following API: https://docs.pokemontcg.io/
@@ -18,7 +20,9 @@ Downsides:
 ## Design Decisions
 
 Design goal was to create an app with a slick and dark aesthetic. I love Pokémon cards and wanted to create something that I could potentially expand into something more useful.
+
 I built it using React-Vite with TypeScript. I used TailwindCSS with the ShadCN Component kit in order to quickly ideate and build what I had in mind.
+
 At first I had just created a basic tool that allowed you to search for cards and view them in more detail, but I figured I should be able to do something more useful, and took my other project ShouldIRip (https://ryanperera.github.io/shouldirip/) as inspiration. Thus, leading me to add the ability to create a collection and see statistics about it.
 When displaying card details in a Dialog component, I took inspiration from the actual card layout itself.
 
